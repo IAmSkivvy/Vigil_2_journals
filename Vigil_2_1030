@@ -1,0 +1,24 @@
+Why do we use disk images in digital forensics?
+We use disk images because they have vast amounts of storage data, and that is 
+extremely valuable with any type of case needed as it is data and data is info and info is what forensics needs.
+
+Provide an example and describe a use case.
+A use case is a software and system engineering term that describes how a user uses a system to accomplish a 
+particular goal. An example of a use case would be *student inputs her name and student number. System verifies 
+the student is eligible to enroll in seminars. If not eligible then the student is informed and use case ends. 
+System displays list of available seminars. Student chooses a seminar or decides not to enroll at all. System 
+validates the student is eligible to enroll in the chosen seminar. If not eligible, the student is asked to 
+choose another. System validates the seminar fits into the student's schedule. System calculates and displays fees. 
+Student verifies the cost and either indicates she wants to enroll or not. System enrolls the student in the 
+seminar and bills them for it. The system prints enrollment receipt.*
+
+What are the steps of creating a blank disk image and then adding files?
+First you have to create and empty file by typing
+fallocate -l 512M image.iso
+Next you turn the file into a virtual disk by adding a file system. mkfs.ext4 -j image.iso
+Finally, to make it universal you have to type
+mkfs.fat image.iso
+
+How does the OSI model relate to the use of disk images?
+The OSI mainly highlights communication functions whereas disk images mainly deal with the actual software 
+structure and the OS.
