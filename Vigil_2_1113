@@ -1,0 +1,7 @@
+How did you combine multiple files in Linux?
+To combine multiple files you have to type bash$ cat file1.txt file2.txt file3.txt file4.txt > mergedfile.txt into your terminal,
+mainly concentrating around the idea of bash$ cat and then lining it to a new file.
+
+How can you split multiple files in Linux?
+To split multiple files you have to type split --bytes=1M /path/to/image/image.jpg /path/to/image/prefixForNewImagePieces in 
+order to take several strips of a file and make them their own file for edit or use to combine with another file.
