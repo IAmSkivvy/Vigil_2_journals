@@ -1,0 +1,5 @@
+How did you split multiple files in Linux?
+split -n file1.txt file2.txt file3.txt
+
+What are the specific commands to create, partition, and write files to a disk image?
+dd if= is a regular stem to start work on a disk image project.
